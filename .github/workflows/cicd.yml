@@ -19,7 +19,7 @@ jobs:
     - name: Build with Gradle
       run: |
         ./gradlew clean build
-          ls build/lib 
+          ls build/libs 
           ls build/generated
     - name: Upload Artifact 
       uses: actions/upload-artifact@v4
