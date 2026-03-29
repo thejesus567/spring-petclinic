@@ -18,7 +18,7 @@ jobs:
       uses: gradle/actions/setup-gradle@v5
     - name: Build with Gradle
       run: |
-        ./gradlew clean build
+        ./gradlew bootjar 
           ls build/libs 
           ls build/generated
     - name: Upload Artifact 
