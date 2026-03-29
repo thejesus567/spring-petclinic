@@ -28,6 +28,7 @@ jobs:
         path: build/libs/*.jar
 
   docker-publish:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Login to Docker Hub
