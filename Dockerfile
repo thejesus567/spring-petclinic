@@ -1,6 +1,6 @@
 from eclipse-temurin:17-jre-ubi10-minimal
 
 WORKDIR /app
-COPY *.jar .
+COPY app.jar .
 
-RUN ["java", "-jar", "*.jar"] 
+RUN ["java", "-jar", "app.jar"] 

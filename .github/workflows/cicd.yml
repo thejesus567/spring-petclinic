@@ -49,7 +49,9 @@ jobs:
           name: app.jar
 
       - name: Display structure of downloaded files
-        run: ls -R
+        run: |
+	  ls -R
+	  cp *.jar app.jar
 
 
       - name: Build and push
